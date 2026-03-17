@@ -189,3 +189,40 @@ button:hover {
 .hidden {
     display: none;
 }
+
+
+
+
+.additional-info {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+.info-item i {
+    color: var(--primary-color);
+    width: 20px;
+    text-align: center;
+}
+
+.info-item a {
+    color: var(--text-gray);
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.info-item a:hover {
+    color: var(--primary-light);
+    text-decoration: underline;
+}
