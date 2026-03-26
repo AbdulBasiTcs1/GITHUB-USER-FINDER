@@ -55,7 +55,7 @@ async function fetchRepositories(reposUrl) {
     reposContainer.innerHTML = '<div class="loading-repos">Loading repositories...</div>';
 
     try {
-        const response = await fetch(reposUrl + "?per_page=6");
+        const response = await fetch(reposUrl + "?sort=updated&per_page=6");
         const repos = await response.json();
         displayRepos(repos);
     } catch (error) {
@@ -161,5 +161,5 @@ function formatDate(dateString) {
     });
 }
 
-searchInput.value = "burakorkmez";
+searchInput.value = "AbdulBasiTcs1";
 searchUser();
